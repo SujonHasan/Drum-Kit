@@ -1,0 +1,47 @@
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pads{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    background-image: url("image/back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image: linear-gradient(to left, #9722a4, #892e8d, #7a3778, #693c64, #564052); */
+    border: 2px solid rgb(201, 15, 170);
+    width: 120px;
+    height: 120px;
+    color: white;
+    margin: 0.3rem;
+    transition: all 0.7s;
+}
+
+.playing
+{
+    transform: scale(1.1);
+    border: 2px solid salmon;
+    box-shadow: 0 0 1rem #ffc600;
+    color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .btn{
+        width: 75px;
+        height: 75px;
+    }
+  }
